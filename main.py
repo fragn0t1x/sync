@@ -25,7 +25,7 @@ def validate_environment():
     if not ACCESS_TOKEN:
         errors.append("Токен доступа не указан")
     if SYNC_INTERVAL < 30:
-        errors.append("Интервал синхронизации должен быть >= 30 секунд")
+        errors.append("Интервал синхронизации должен быть >= 10 секунд")
 
     if errors:
         for error in errors:
